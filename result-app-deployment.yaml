@@ -11,10 +11,11 @@ spec:
             name: result-app-pod
             app: demo-voting-app
         template:
-            name: result-app-pod
-            labels:
+            metadata:
                 name: result-app-pod
-                app: demo-voting-app
+                labels:
+                    name: result-app-pod
+                    app: demo-voting-app
             spec:
                 containers:
                 - name: result-app
